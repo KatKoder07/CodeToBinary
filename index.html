@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code to Binary Converter</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Code <span style="color: #3fb950;">&rarr;</span> Binary</h1>
+    <p>Paste your code below. The language will be auto-detected, and converted to ASCII binary in real-time.</p>
+
+    <div class="container">
+        <div class="panel">
+            <div class="header">
+                <span>Source Code</span>
+                <span id="detectedLang" class="lang-badge">Awaiting Input...</span>
+            </div>
+            <textarea id="inputCode" placeholder="Paste your code here..."></textarea>
+        </div>
+
+        <div class="panel">
+            <div class="header">
+                <span>Raw Binary String</span>
+            </div>
+            <textarea id="outputBinary" placeholder="01000010 01101001 01101110 01100001 01110010 01111001..." readonly></textarea>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
